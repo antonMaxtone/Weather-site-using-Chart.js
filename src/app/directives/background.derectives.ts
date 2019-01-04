@@ -1,6 +1,6 @@
 import {Directive, ElementRef} from '@angular/core';
 
-@Directive({selector: '[appBackground]'})
+@Directive({selector: '[lecBackground]'})
 
 export class BackgroundDirective {
   constructor (private el: ElementRef) {
