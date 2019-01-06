@@ -4,25 +4,25 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ListComponent } from './components/list.component';
-import { BackgroundDirective } from './directives/background.derectives';
-import { MyFirstComponent } from './components/myFirstComponent/myFirstComponent.component';
-import { AsideComponent } from './components/aside/aside.component';
-import { HeaderComponent } from './components/header/header.component';
+import { TopMenuComponent } from './top-menu/top-menu.component';
+import { ListAndTableComponent } from './list-and-table/list-and-table.component';
+import { HomeComponent } from './home/home.component';
+import { ImagesComponent } from './images/images.component';
+import { PostTilesComponent } from './post-tiles/post-tiles.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListComponent,
-    BackgroundDirective,
-    MyFirstComponent,
-    AsideComponent,
-    HeaderComponent
+    TopMenuComponent,
+    ListAndTableComponent,
+    HomeComponent,
+    ImagesComponent,
+    PostTilesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule.forRoot()
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
