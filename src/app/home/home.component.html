@@ -1,3 +1,16 @@
-<p>
-  Graphics!
-</p>
+<div>
+  <div style="display: block">
+    <ul>
+      <li class="graphicsList">
+    <canvas baseChart
+      [datasets] = "barChartData"
+      [labels] = "barChartLabels"
+      [options] = "barChartOptions"
+      [legend] = "barChartLegend"
+      [chartType] = "barChartType">
+      <!-- (chartHover)="chartHovered($event)" -->
+    </canvas>
+      </li>
+    </ul>
+  </div>
+</div>
