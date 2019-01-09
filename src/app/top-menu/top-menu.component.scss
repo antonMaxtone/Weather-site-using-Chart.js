@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+}
+
+footer {
+  min-height: 100px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  background-color:  #86C7F3;;
+  min-height: 45px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  margin-top: auto;
+}

@@ -1,15 +1,29 @@
 <div>
-  <div style="display: block">
+  <div class="graphics" style="display: block">
     <ul>
-      <li class="graphicsList">
+      <li>
+    <h4>Average air temperature in Cherkasy</h4>
     <canvas baseChart
       [datasets] = "barChartData"
       [labels] = "barChartLabels"
       [options] = "barChartOptions"
       [legend] = "barChartLegend"
-      [chartType] = "barChartType">
-      <!-- (chartHover)="chartHovered($event)" -->
-    </canvas>
+      [chartType] = "barChartType"></canvas>
+    <button type="button" class="btn btn-outline-secondary" (click)="randomize()">Change air temperature</button>
+      </li>
+      <li>
+        <h4>Average rainfall for the season</h4>
+        <canvas baseChart
+        [data]="doughnutChartData"
+        [labels]="doughnutChartLabels"
+        [chartType]="doughnutChartType"></canvas>
+      </li>
+      <li>
+        <h4>Speed and wind direction by season</h4>
+        <canvas baseChart
+        [datasets]="radarChartData"
+        [labels]="radarChartLabels"
+        [chartType]="radarChartType"></canvas>
       </li>
     </ul>
   </div>
