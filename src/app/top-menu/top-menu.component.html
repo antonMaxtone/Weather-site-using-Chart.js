@@ -3,16 +3,60 @@
 <nav class="navbar navbar-fixed-top navbar-dark bg-dark">
   <div class="container">
       <a class="navbar-brand"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMyuvZ1drKxmwKFnI-cv8OFfQp8Hw5sHSgfJQOcWylW8yhz0qf" width="50" height="50" alt="Angular"></a>
-      <ul class="nav justify-content-center nav-tabs" >
-          <li class="nav-item"><a class="nav-link" routerLink="">Home</a></li>
-          <li class="nav-item"><a class="nav-link" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
-            true}" routerLink="list">List and Table</a></li>
-          <li class="nav-item"><a class="nav-link" routerLink="images">Images</a></li>
-          <li class="nav-item"><a class="nav-link" routerLink="post">Post tiles</a></li>
+      <ul class="nav justify-content-center nav-tabs">
+          <li class="nav-item"><a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" routerLink="home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="list">List and Table</a></li>
+          <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="images">Images</a></li>
+          <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="post">Post tiles</a></li>
       </ul>
   </div>
 </nav>
 </header>
 <router-outlet></router-outlet>
-<footer>Im footer!</footer>
+<footer class="page-footer font-small">
+        <div class="container">
+
+                <!-- Grid row-->
+                <div class="row">
+          
+                  <!-- Grid column -->
+                  <div class="col-md-1 py-1">
+                    <div class="mb-1 flex-center">
+          
+                      <!-- Facebook -->
+                      <a class="fb-ic">
+                        <mdb-icon icon="facebook" size="1x" class="white-text mr-md-5 mr-3"></mdb-icon>
+                      </a>
+                      <!-- Twitter -->
+                      <a class="tw-ic">
+                          <mdb-icon icon="twitter" size="1x" class="white-text mr-md-5 mr-3"></mdb-icon>
+                      </a>
+                      <!-- Google +-->
+                      <a class="gplus-ic">
+                          <mdb-icon icon="google-plus" size="1x" class="white-text mr-md-5 mr-3"></mdb-icon>
+                      </a>
+                      <!--Linkedin -->
+                      <a class="li-ic">
+                          <mdb-icon icon="linkedin" size="1x" class="white-text mr-md-5 mr-3"></mdb-icon>
+                      </a>
+                      <!--Instagram-->
+                      <a class="ins-ic">
+                          <mdb-icon icon="instagram" size="1x" class="white-text mr-md-5 mr-3"></mdb-icon>
+                      </a>
+                      <!--Pinterest-->
+                      <a class="pin-ic">
+                          <mdb-icon icon="pinterest" size="1x" class="white-text mr-md-5 mr-3"></mdb-icon>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Grid column -->
+          
+                </div>
+                <!-- Grid row-->
+          
+              </div>
+    <div class="footer-copyright text-center py-1">© 2019 Copyright:
+        <a href="https://mdbootstrap.com/education/angular/">Lectorium</a>
+    </div>
+</footer>
 </div>
